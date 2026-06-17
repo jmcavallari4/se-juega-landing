@@ -58,7 +58,7 @@ const SolutionSection = () => {
           <p className="text-lg text-warm-white/80 mb-4">
             Ya hay{" "}
             <span className="text-transparent bg-gradient-to-r from-green-400 to-green-600 bg-clip-text font-bold">
-              50 equipos en la waitlist
+              52 equipos en la waitlist
             </span>
           </p>
           <Button variant="cta" size="lg" className="text-lg px-12 py-4 h-auto shadow-glow">

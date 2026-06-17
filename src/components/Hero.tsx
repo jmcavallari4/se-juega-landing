@@ -43,9 +43,10 @@ const Hero = () => {
               <Button variant="hero" size="lg" className="text-lg px-8 py-4 h-auto shadow-glow">
                 <a href="#cta">🔘 Registrá tu Equipo Gratis!</a>
               </Button>
-              <p className="text-lg text-warm-white/80 mt-4 font-semibold">
-                Ya hay 50 equipos en la waitlist — sumate antes de que se agoten los 100 cupos gratis para siempre
-              </p>
+              <div className="inline-flex items-center gap-2 bg-bright-green/10 border border-bright-green/40 text-bright-green font-semibold text-sm md:text-base rounded-full px-4 py-2 mt-4">
+                <span className="w-2 h-2 rounded-full bg-bright-green shadow-neon"></span>
+                52 equipos ya en la waitlist — quedan 48 cupos fundador
+              </div>
             </div>
           </div>
 
