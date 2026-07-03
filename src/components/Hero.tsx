@@ -1,74 +1,81 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-football.jpg";
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24 pb-8 md:pb-12">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt="Fútbol competitivo" 
-          className="w-full h-full object-cover opacity-30"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/60"></div>
-      </div>
+    <section
+      id="inicio"
+      className="relative overflow-hidden pt-28 md:pt-36 pb-16 md:pb-24"
+    >
+      {/* Blobs de fondo */}
+      <div className="sj-blob w-[600px] h-[600px] -top-56 -left-32 bg-metallic-green/30 opacity-40" />
+      <div className="sj-blob w-[480px] h-[480px] -bottom-64 -right-24 bg-[hsl(90_45%_25%)]/30 opacity-30" />
 
-      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-6 md:gap-12 items-center">
-          {/* Left side - Text content */}
+        <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 md:gap-14 items-center">
+          {/* Texto */}
           <div className="text-center lg:text-left">
-            {/* Pre-headline */}
-            <p className="text-electric-yellow text-lg md:text-xl font-medium mb-4 animate-fade-in">
-              ¿Jugás al fútbol y querés partidos de calidad?
-            </p>
-
-            {/* Main headline */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-warm-white mb-4 md:mb-6 leading-tight animate-fade-in">
-              Jugá contra{" "}
-              <span className="text-transparent bg-gradient-hero bg-clip-text">
-                equipos de tu nivel
+            <div className="inline-flex animate-fade-in">
+              <span className="sj-pill">
+                <span className="sj-dot" />
+                ¿Jugás al fútbol y querés partidos de calidad?
               </span>
-              . Cuando quieras. Donde quieras.
+            </div>
+
+            <h1 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold text-warm-white leading-[1.05] animate-fade-in">
+              Jugá contra{" "}
+              <span className="sj-grad-text">equipos de tu nivel</span>. Cuando
+              quieras. Donde quieras.
             </h1>
 
-            {/* Sub-headline */}
-            <p className="text-lg md:text-xl text-warm-white/90 mb-6 md:mb-8 leading-relaxed animate-fade-in">
-              Se Juega te conecta con rivales cerca tuyo, a tu nivel, para que compitas en un ranking que se actualiza partido a partido.
+            <p className="mt-5 md:mt-6 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 animate-fade-in">
+              Se Juega te conecta con rivales cerca tuyo, a tu nivel, para que
+              compitas en un ranking que se actualiza partido a partido.
             </p>
 
-            {/* CTA Button */}
-            <div className="animate-fade-in">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-4 h-auto shadow-glow">
+            <div className="mt-8 flex flex-col sm:flex-row gap-3 items-center justify-center lg:justify-start animate-fade-in">
+              <Button variant="hero" size="lg" className="text-base md:text-lg px-8 py-4 h-auto">
                 <a href="#cta">🔘 Registrá tu Equipo Gratis!</a>
               </Button>
-              <div className="inline-flex items-center gap-2 bg-bright-green/10 border border-bright-green/40 text-bright-green font-semibold text-sm md:text-base rounded-full px-4 py-2 mt-4">
-                <span className="w-2 h-2 rounded-full bg-bright-green shadow-neon"></span>
-                52 equipos ya en la waitlist — quedan 48 cupos fundador
+            </div>
+
+            <div className="mt-7 flex items-center gap-3 justify-center lg:justify-start animate-fade-in">
+              <div className="flex -space-x-3">
+                {["⚽", "🥅", "🏆"].map((e, i) => (
+                  <span
+                    key={i}
+                    className="w-9 h-9 rounded-full border-2 border-background bg-gradient-to-br from-metallic-green/40 to-bright-green/40 flex items-center justify-center text-sm"
+                  >
+                    {e}
+                  </span>
+                ))}
               </div>
+              <p className="text-sm md:text-base text-muted-foreground">
+                <span className="text-warm-white font-semibold">52 equipos</span>{" "}
+                ya en la waitlist — quedan{" "}
+                <span className="text-warm-white font-semibold">48 cupos fundador</span>
+              </p>
             </div>
           </div>
 
+          {/* Visual: video demo en marco tipo teléfono */}
           <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-xs md:max-w-md space-y-6">
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-metallic border-2 border-metallic-green">
-                <iframe
-                  src="https://player.cloudinary.com/embed/?cloud_name=diytyojwg&public_id=prototipo_2_wsdkhh&profile=cld-looping&controls=false&autoplay=true&muted=true"
-                  title="Se Juega - Demo"
-                  className="w-full h-full pointer-events-none"
-                  allow="autoplay"
-                  allowFullScreen
-                />
+            <div className="relative animate-float">
+              <div className="absolute inset-0 -z-10 blur-3xl bg-bright-green/20 rounded-full scale-90" />
+              <div className="w-[270px] md:w-[300px] rounded-[2.5rem] border border-white/10 bg-gradient-to-b from-[hsl(150_30%_10%)] to-[hsl(150_30%_5%)] p-3 shadow-metallic">
+                <div className="rounded-[2rem] overflow-hidden border border-border aspect-[9/16] bg-background">
+                  <iframe
+                    src="https://player.cloudinary.com/embed/?cloud_name=diytyojwg&public_id=prototipo_2_wsdkhh&profile=cld-looping&controls=false&autoplay=true&muted=true"
+                    title="Se Juega - Demo"
+                    className="w-full h-full pointer-events-none"
+                    allow="autoplay"
+                    allowFullScreen
+                  />
+                </div>
               </div>
-              
             </div>
           </div>
         </div>
       </div>
-
-      {/* Decorative elements */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-background to-transparent"></div>
     </section>
   );
 };

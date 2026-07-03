@@ -39,7 +39,7 @@ const ProcessSection = () => {
     },
     {
       number: "5",
-      title: "Jugá y calificá",
+      title: "Jugá y califica",
       description: "después del partido, ambos capitanes cargan el resultado y puntúan el comportamiento del rival.",
       hoverImage: calificaHover
     },
@@ -52,10 +52,11 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section id="como-funciona" className="py-8 md:py-12 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-6 md:mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-electric-yellow mb-2 md:mb-4">
+    <section id="como-funciona" className="py-16 md:py-24 bg-background">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
+          <p className="sj-eyebrow mb-4">Cómo funciona</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-warm-white">
             ¿Cómo funciona?
           </h2>
         </div>
@@ -66,21 +67,21 @@ const ProcessSection = () => {
             {/* Steps Column */}
             <div className="space-y-1.5 md:space-y-3">
               {steps.map((step, index) => (
-                <div 
-                  key={index} 
-                  className="bg-card rounded-lg p-2 md:p-3 border border-border shadow-metallic hover:shadow-glow transition-all duration-300 cursor-pointer"
+                <div
+                  key={index}
+                  className="sj-card p-3 md:p-4 cursor-pointer hover:border-bright-green/30"
                   onMouseEnter={() => setHoveredStep(step.hoverImage ? index : null)}
                   onMouseLeave={() => setHoveredStep(null)}
                 >
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <div className="w-5 h-5 md:w-6 md:h-6 bg-gradient-hero rounded-full flex items-center justify-center text-background font-bold text-xs flex-shrink-0">
+                  <div className="flex items-center gap-3 md:gap-4">
+                    <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center text-background font-display font-bold text-sm flex-shrink-0">
                       {step.number}
                     </div>
                     <div className="min-w-0 flex-1">
-                      <h3 className="text-xs md:text-sm font-bold text-electric-yellow mb-0.5 md:mb-1">
+                      <h3 className="text-sm md:text-base font-semibold text-warm-white mb-0.5">
                         {step.title}
                       </h3>
-                      <p className="text-warm-white/90 text-xs leading-tight md:leading-relaxed">
+                      <p className="text-muted-foreground text-xs md:text-sm leading-snug">
                         {step.description}
                       </p>
                     </div>
@@ -100,8 +101,8 @@ const ProcessSection = () => {
                   />
                 )}
                 {hoveredStep === null && (
-                  <div className="w-full h-full bg-card/50 border border-border rounded-xl flex items-center justify-center">
-                    <p className="text-warm-white/60 text-center text-sm md:text-lg px-4">
+                  <div className="w-full h-full bg-card/50 border border-border rounded-2xl flex items-center justify-center">
+                    <p className="text-muted-foreground text-center text-sm md:text-lg px-4">
                       Pasa el mouse sobre los pasos para ver las capturas de pantalla
                     </p>
                   </div>
@@ -121,20 +122,20 @@ const ProcessSection = () => {
                 onOpenChange={(open) => setOpenSteps(prev => ({ ...prev, [index]: open }))}
               >
                 <CollapsibleTrigger className="w-full">
-                  <div className="bg-card rounded-lg p-2 md:p-3 border border-border shadow-metallic hover:shadow-glow transition-all duration-300">
-                    <div className="flex items-center gap-2 md:gap-3">
-                      <div className="w-6 h-6 md:w-8 md:h-8 bg-gradient-hero rounded-full flex items-center justify-center text-background font-bold text-sm flex-shrink-0">
+                  <div className="sj-card p-3 md:p-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center text-background font-display font-bold text-sm flex-shrink-0">
                         {step.number}
                       </div>
                       <div className="min-w-0 flex-1 text-left">
-                        <h3 className="text-sm md:text-base font-bold text-electric-yellow mb-1 md:mb-1">
+                        <h3 className="text-sm md:text-base font-semibold text-warm-white mb-0.5">
                           {step.title}
                         </h3>
-                        <p className="text-warm-white/90 text-sm md:text-base leading-relaxed">
+                        <p className="text-muted-foreground text-sm leading-snug">
                           {step.description}
                         </p>
                       </div>
-                      <ChevronDown className="h-4 w-4 text-warm-white/60 transition-transform duration-200 data-[state=open]:rotate-180" />
+                      <ChevronDown className="h-4 w-4 text-muted-foreground transition-transform duration-200 data-[state=open]:rotate-180" />
                     </div>
                   </div>
                 </CollapsibleTrigger>

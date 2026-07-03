@@ -1,68 +1,71 @@
-import rankingBg from "@/assets/ranking-bg.jpg";
 import rankingExample from "@/assets/ranking-example.png";
 
 const RankingSection = () => {
   return (
-    <section id="ranking" className="py-8 md:py-12 bg-card relative overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img 
-          src={rankingBg} 
-          alt="Ranking background" 
-          className="w-full h-full object-cover opacity-25"
-        />
-        <div className="absolute inset-0 bg-card/85"></div>
-      </div>
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-8 md:mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-electric-yellow mb-6">
+    <section id="ranking" className="py-16 md:py-24 relative overflow-hidden bg-[hsl(150_22%_3%)]">
+      <div className="sj-blob w-[460px] h-[460px] -bottom-40 -left-32 bg-metallic-green/20 opacity-25" />
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+          <p className="sj-eyebrow mb-4">El ranking</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-warm-white">
             El Ranking
           </h2>
         </div>
 
-        {/* Single Box with Text and Image */}
-        <div className="bg-background rounded-2xl p-4 md:p-8 lg:p-12 border border-border shadow-metallic max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-            {/* Text Content */}
-            <div className="space-y-4 md:space-y-6 text-warm-white/90 text-base md:text-lg leading-relaxed">
-              <p className="text-lg md:text-xl">
-                Se Juega utiliza un sistema ELO, como el ajedrez o los videojuegos competitivos.
-              </p>
-              
-              <div className="bg-muted rounded-xl p-4 md:p-6 border-l-4 border-metallic-green">
-                <h3 className="font-semibold text-warm-white mb-3 md:mb-4 text-lg md:text-xl">El sistema ajusta el puntaje del equipo según:</h3>
-                <ul className="space-y-2 text-warm-white/90 text-sm md:text-base">
-                  <li className="flex items-start">
-                    <span className="text-electric-yellow mr-2">•</span>
-                    El resultado del partido
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-electric-yellow mr-2">•</span>
-                    El puntaje de los dos equipos en el ranking al momento del encuentro
-                  </li>
-                </ul>
-              </div>
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-5xl mx-auto">
+          {/* Texto */}
+          <div className="space-y-5 md:space-y-6">
+            <span className="inline-flex items-center gap-2 rounded-full border border-electric-yellow/20 bg-electric-yellow/10 text-electric-yellow text-sm font-semibold px-4 py-1.5">
+              ♟ Sistema ELO · como el ajedrez
+            </span>
 
-              <p className="text-sm md:text-lg">
-                Mientras mayor puntaje tenga el rival, más puntos otorgará una victoria sobre él y menos puntos restará una derrota. Los empates también pueden sumar o restar puntos.
-              </p>
+            <p className="text-lg md:text-xl text-warm-white leading-relaxed">
+              Se Juega utiliza un sistema ELO, como el ajedrez o los videojuegos
+              competitivos.
+            </p>
 
-              <p className="text-sm md:text-lg">
-                De esta manera, no importa tanto la cantidad de victorias, sino más bien su calidad.
-              </p>
-
-              <p className="text-base md:text-lg text-center text-warm-white font-medium bg-gradient-to-r from-electric-yellow/20 to-neon-green/20 rounded-xl p-4 md:p-6">
-                Este sistema ayuda a tener un ranking que refleje el verdadero nivel de todos los equipos.
-              </p>
+            <div className="sj-card p-5 md:p-6 border-l-2 border-l-bright-green">
+              <h3 className="font-semibold text-warm-white mb-4 text-lg">
+                El sistema ajusta el puntaje del equipo según:
+              </h3>
+              <ul className="space-y-2.5 text-muted-foreground text-sm md:text-base">
+                <li className="flex items-start">
+                  <span className="text-electric-yellow mr-2">•</span>
+                  El resultado del partido
+                </li>
+                <li className="flex items-start">
+                  <span className="text-electric-yellow mr-2">•</span>
+                  El puntaje de los dos equipos en el ranking al momento del
+                  encuentro
+                </li>
+              </ul>
             </div>
 
-            {/* Ranking Image */}
-            <div className="flex justify-center">
-              <img 
-                src={rankingExample} 
-                alt="Ejemplo de ranking ELO de equipos de fútbol" 
-                className="w-full max-w-md h-auto rounded-xl shadow-lg"
+            <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+              Mientras mayor puntaje tenga el rival, más puntos otorgará una
+              victoria sobre él y menos puntos restará una derrota. Los empates
+              también pueden sumar o restar puntos.
+            </p>
+
+            <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+              De esta manera, no importa tanto la cantidad de victorias, sino más
+              bien su calidad.
+            </p>
+
+            <p className="text-base md:text-lg text-warm-white font-medium rounded-2xl p-5 md:p-6 bg-gradient-to-r from-electric-yellow/10 to-bright-green/10 border border-border">
+              Este sistema ayuda a tener un ranking que refleje el verdadero
+              nivel de todos los equipos.
+            </p>
+          </div>
+
+          {/* Imagen */}
+          <div className="flex justify-center">
+            <div className="sj-card p-3 md:p-4">
+              <img
+                src={rankingExample}
+                alt="Ejemplo de ranking ELO de equipos de fútbol"
+                className="w-full max-w-md h-auto rounded-xl"
               />
             </div>
           </div>

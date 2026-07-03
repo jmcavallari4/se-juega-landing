@@ -1,90 +1,105 @@
 import { Button } from "@/components/ui/button";
-import solutionBg from "@/assets/solution-bg.jpg";
 
 const SolutionSection = () => {
   const benefits = [
-    "Una gran variedad de equipos para desafiar, de todas las zonas y niveles.",
-    "Libertad para escoger la fecha, el horario y el lugar que más te convenga para jugar.",
-    "Un ranking dinámico que refleja el nivel real de cada equipo.",
-    "Un sistema de reputación que filtra equipos con mala actitud y promueve el juego limpio.",
-    "Todo esto, sin pagar el costo extra de un torneo."
+    {
+      icon: "🎯",
+      text: "Una gran variedad de equipos para desafiar, de todas las zonas y niveles.",
+      span: "md:col-span-2",
+    },
+    {
+      icon: "📊",
+      text: "Un ranking dinámico que refleja el nivel real de cada equipo.",
+      span: "",
+    },
+    {
+      icon: "🗓️",
+      text: "Libertad para escoger la fecha, el horario y el lugar que más te convenga para jugar.",
+      span: "",
+    },
+    {
+      icon: "🛡️",
+      text: "Un sistema de reputación que filtra equipos con mala actitud y promueve el juego limpio.",
+      span: "",
+    },
+    {
+      icon: "💸",
+      text: "Todo esto, sin pagar el costo extra de un torneo.",
+      span: "",
+      feat: true,
+    },
   ];
 
   return (
-    <section id="ventajas" className="py-8 md:py-12 bg-card relative overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img 
-          src={solutionBg} 
-          alt="Solution background" 
-          className="w-full h-full object-cover opacity-20"
-        />
-        <div className="absolute inset-0 bg-card/80"></div>
-      </div>
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section
+      id="ventajas"
+      className="py-16 md:py-24 relative overflow-hidden bg-[hsl(150_22%_3%)]"
+    >
+      <div className="sj-blob w-[500px] h-[500px] top-0 -right-36 bg-metallic-green/20 opacity-30" />
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Intro */}
-        <div className="text-center mb-8 md:mb-12">
-          <p className="text-lg md:text-xl text-warm-white mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <p className="text-base md:text-lg text-muted-foreground mb-3">
             Por este motivo creamos
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 uppercase">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight">
             <span className="text-bright-green">SE</span>{" "}
             <span className="text-electric-yellow">JUEGA</span>
           </h2>
         </div>
 
-        {/* Benefits */}
-        <div className="mb-8 md:mb-12">
-          <div className="bg-background rounded-2xl p-4 md:p-8 border border-border shadow-metallic">
-            <h3 className="text-xl md:text-2xl font-bold text-electric-yellow mb-6 md:mb-8 text-center">
-              Con Se Juega vas a tener:
-            </h3>
-            <div className="space-y-4 md:space-y-6">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start space-x-4">
-                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-xl">⚽</span>
-                  </div>
-                  <p className="text-warm-white text-base md:text-lg">{benefit}</p>
-                </div>
-              ))}
+        {/* Bento de beneficios */}
+        <div className="grid md:grid-cols-3 gap-4 md:gap-5 mb-12 md:mb-16">
+          {benefits.map((benefit, index) => (
+            <div
+              key={index}
+              className={`sj-card p-7 md:p-8 flex flex-col justify-between min-h-[180px] ${benefit.span} ${
+                benefit.feat
+                  ? "bg-gradient-to-br from-bright-green/[0.14] to-electric-yellow/[0.04] border-bright-green/20"
+                  : ""
+              }`}
+            >
+              <span className="text-3xl">{benefit.icon}</span>
+              <p className="mt-6 text-base md:text-lg text-warm-white leading-snug">
+                {benefit.text}
+              </p>
             </div>
-          </div>
+          ))}
         </div>
 
         {/* CTA */}
-        <div className="text-center mb-8 md:mb-12">
-          <p className="text-lg text-warm-white/80 mb-4">
-            Ya hay{" "}
-            <span className="text-transparent bg-gradient-to-r from-green-400 to-green-600 bg-clip-text font-bold">
-              52 equipos en la waitlist
+        <div className="text-center mb-16 md:mb-20">
+          <div className="inline-flex mb-5">
+            <span className="sj-pill">
+              <span className="sj-dot" />
+              Ya hay 52 equipos en la waitlist
             </span>
-          </p>
-          <Button variant="cta" size="lg" className="text-lg px-12 py-4 h-auto shadow-glow">
-            <a href="#cta">Registrá tu Equipo Ahora Gratis!</a>
-          </Button>
+          </div>
+          <div>
+            <Button variant="cta" size="lg" className="text-base md:text-lg px-10 py-4 h-auto">
+              <a href="#cta">Registrá tu Equipo Ahora Gratis!</a>
+            </Button>
+          </div>
         </div>
 
-        {/* What is Se Juega */}
-        <div className="text-center mb-8 md:mb-12">
-          <h3 className="text-2xl md:text-3xl font-bold text-electric-yellow mb-4 md:mb-6">
+        {/* Qué es Se Juega */}
+        <div className="text-center max-w-3xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-bold text-electric-yellow mb-5">
             ¿Qué es Se Juega?
           </h3>
-          <p className="text-lg md:text-xl text-warm-white max-w-4xl mx-auto leading-relaxed mb-4 md:mb-6">
-            Se juega es una comunidad de equipos amateur que quieren competir de manera equilibrada y sin conflictos.
+          <p className="text-lg md:text-xl text-warm-white leading-relaxed mb-5">
+            Se juega es una comunidad de equipos amateur que quieren competir de
+            manera equilibrada y sin conflictos.
           </p>
-          <p className="text-lg md:text-xl text-warm-white max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-warm-white leading-relaxed">
             Acá jugás{" "}
-            <span className="text-transparent bg-gradient-hero bg-clip-text font-semibold">cuando</span>{" "}
-            querés,{" "}
-            <span className="text-transparent bg-gradient-hero bg-clip-text font-semibold">donde</span>{" "}
-            querés, y{" "}
-            <span className="text-transparent bg-gradient-hero bg-clip-text font-semibold">contra</span>{" "}
-            quien querés.
+            <span className="sj-grad-text font-semibold">cuando</span> querés,{" "}
+            <span className="sj-grad-text font-semibold">donde</span> querés, y{" "}
+            <span className="sj-grad-text font-semibold">contra</span> quien
+            querés.
           </p>
         </div>
-
       </div>
     </section>
   );

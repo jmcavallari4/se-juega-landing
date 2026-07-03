@@ -1,73 +1,68 @@
-import problemBg from "@/assets/problem-bg.jpg";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const ProblemSection = () => {
   const problems = [
     {
+      icon: "📵",
       question: "¿Te cuesta armar partidos?",
       description: "No juntan 10, cuesta encontrar rivales o terminan siempre jugando contra los mismos."
     },
     {
+      icon: "😤",
       question: "¿Te frustra la experiencia?",
       description: "Mala leche, partidos desparejos o sin competencia real."
     },
     {
+      icon: "🔥",
       question: "¿Querés más emoción?",
       description: "Nuevos desafíos y partidos en serio, no solo una juntada."
     }
   ];
 
   return (
-    <section className="py-6 md:py-8 bg-background relative overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img 
-          src={problemBg} 
-          alt="Fútbol background" 
-          className="w-full h-full object-cover opacity-20"
-        />
-        <div className="absolute inset-0 bg-background/80"></div>
-      </div>
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-6 md:mb-10">
-          <p className="text-base md:text-lg text-electric-yellow mb-4 md:mb-6 font-semibold">
+    <section className="py-16 md:py-24 relative overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+          <p className="sj-eyebrow mb-4">El problema</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-warm-white mb-4 leading-tight">
             Armar un buen partido hoy es más difícil de lo que parece.
-          </p>
-          
-          <h3 className="text-base md:text-lg font-bold text-warm-white mb-4 md:mb-6">
+          </h2>
+          <p className="text-base md:text-lg text-muted-foreground">
             ¿Te pasó alguna de estas?
-          </h3>
-          
-          <div className="max-w-3xl mx-auto mb-6 md:mb-10">
-            <div className="bg-card p-4 md:p-6 rounded-xl border border-border hover:border-metallic-green transition-all duration-300 hover:shadow-glow">
-              <div className="space-y-4 md:space-y-5 text-warm-white text-sm md:text-base">
-                {problems.map((problem, index) => (
-                  <div key={index} className="flex flex-col gap-2">
-                    <h4 className="font-semibold text-warm-white">{problem.question}</h4>
-                    <p className="text-warm-white/80 text-sm md:text-base leading-relaxed pl-4">{problem.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-base md:text-lg font-bold text-electric-yellow mb-3 md:mb-4 text-center">
+        <div className="grid md:grid-cols-3 gap-5 mb-16 md:mb-20">
+          {problems.map((problem, index) => (
+            <div key={index} className="sj-card p-7 md:p-8 hover:-translate-y-1">
+              <div className="w-12 h-12 rounded-xl bg-electric-yellow/10 border border-electric-yellow/20 flex items-center justify-center text-2xl mb-5">
+                {problem.icon}
+              </div>
+              <h3 className="text-lg md:text-xl font-semibold text-warm-white mb-2">
+                {problem.question}
+              </h3>
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                {problem.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="max-w-3xl mx-auto">
+          <h3 className="text-lg md:text-xl font-bold text-electric-yellow mb-5 text-center">
             Hoy en día, existen dos formas de competir
           </h3>
-          
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="torneos" className="border-border">
-              <AccordionTrigger className="text-base md:text-lg font-bold text-warm-white hover:text-electric-yellow">
+
+          <Accordion type="single" collapsible className="w-full space-y-3">
+            <AccordionItem value="torneos" className="sj-card border px-5 md:px-6">
+              <AccordionTrigger className="text-base md:text-lg font-bold text-warm-white hover:text-electric-yellow hover:no-underline">
                 <div className="flex items-center">
-                  <span className="text-lg md:text-xl mr-2">🏆</span>
-                  <span className="underline">Torneos convencionales</span>
+                  <span className="text-lg md:text-xl mr-3">🏆</span>
+                  <span>Torneos convencionales</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent>
-                <ul className="space-y-2 md:space-y-3 text-warm-white/90 text-xs md:text-base">
+                <ul className="space-y-3 text-muted-foreground text-sm md:text-base">
                   <li className="flex items-start">
                     <span className="mr-2 mt-0.5">❌</span>
                     Quedás atado a días y horarios fijos.
@@ -88,15 +83,15 @@ const ProblemSection = () => {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="rivales" className="border-border">
-              <AccordionTrigger className="text-base md:text-lg font-bold text-warm-white hover:text-electric-yellow">
+            <AccordionItem value="rivales" className="sj-card border px-5 md:px-6">
+              <AccordionTrigger className="text-base md:text-lg font-bold text-warm-white hover:text-electric-yellow hover:no-underline">
                 <div className="flex items-center">
-                  <span className="text-lg md:text-xl mr-2">🔍</span>
-                  <span className="underline">Buscar rivales por redes o contactos</span>
+                  <span className="text-lg md:text-xl mr-3">🔍</span>
+                  <span>Buscar rivales por redes o contactos</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent>
-                <ul className="space-y-2 md:space-y-3 text-warm-white/90 text-xs md:text-base">
+                <ul className="space-y-3 text-muted-foreground text-sm md:text-base">
                   <li className="flex items-start">
                     <span className="mr-2 mt-0.5">❌</span>
                     Cuesta encontrar un rival que se acomode a tus horarios y zona

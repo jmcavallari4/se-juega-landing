@@ -50,31 +50,34 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-6 md:py-8 bg-background">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-6 md:mb-8">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-electric-yellow mb-3 md:mb-4">
+    <section id="faq" className="py-16 md:py-24 bg-[hsl(150_22%_3%)]">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-10 md:mb-14">
+          <p className="sj-eyebrow mb-4">Dudas</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-warm-white mb-3">
             Preguntas Frecuentes
           </h2>
-          <p className="text-lg md:text-xl text-warm-white/80">
+          <p className="text-base md:text-lg text-muted-foreground">
             Resolvé todas tus dudas sobre Se Juega
           </p>
         </div>
 
-        <div className="bg-card rounded-2xl p-4 md:p-6 border border-border shadow-metallic">
-          <Accordion type="single" collapsible className="w-full space-y-2">
-            {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-border">
-                <AccordionTrigger className="text-warm-white hover:text-electric-yellow text-left text-base md:text-lg font-medium py-3">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-warm-white/80 text-sm md:text-base leading-relaxed pb-3">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
+        <Accordion type="single" collapsible className="w-full space-y-3">
+          {faqs.map((faq, index) => (
+            <AccordionItem
+              key={index}
+              value={`item-${index}`}
+              className="sj-card border px-5 md:px-6"
+            >
+              <AccordionTrigger className="text-warm-white hover:text-electric-yellow hover:no-underline text-left text-base md:text-lg font-medium py-4">
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground text-sm md:text-base leading-relaxed pb-4">
+                {faq.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </div>
     </section>
   );
