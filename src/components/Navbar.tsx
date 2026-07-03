@@ -14,28 +14,28 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 w-full z-50 bg-background/70 backdrop-blur-xl border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 md:h-[68px]">
           <div className="flex items-center">
-            <a href="#inicio" className="text-2xl font-bold text-electric-yellow hover:text-electric-yellow/80 transition-colors uppercase">
+            <a href="#inicio" className="font-display text-xl md:text-2xl font-bold text-warm-white hover:text-warm-white/90 transition-colors tracking-tight">
               <span className="text-bright-green">Se</span> Juega
             </a>
           </div>
-          
+
           {/* Desktop menu */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              <a href="#ventajas" className="text-warm-white hover:text-electric-yellow transition-colors px-3 py-2 rounded-md text-sm font-medium">
+            <div className="ml-10 flex items-baseline space-x-1">
+              <a href="#ventajas" className="text-muted-foreground hover:text-warm-white transition-colors px-3 py-2 rounded-md text-sm font-medium">
                 Ventajas
               </a>
-              <a href="#como-funciona" className="text-warm-white hover:text-electric-yellow transition-colors px-3 py-2 rounded-md text-sm font-medium">
+              <a href="#como-funciona" className="text-muted-foreground hover:text-warm-white transition-colors px-3 py-2 rounded-md text-sm font-medium">
                 ¿Cómo Funciona?
               </a>
-              <a href="#ranking" className="text-warm-white hover:text-electric-yellow transition-colors px-3 py-2 rounded-md text-sm font-medium">
+              <a href="#ranking" className="text-muted-foreground hover:text-warm-white transition-colors px-3 py-2 rounded-md text-sm font-medium">
                 Ranking
               </a>
-              <a href="#faq" className="text-warm-white hover:text-electric-yellow transition-colors px-3 py-2 rounded-md text-sm font-medium">
+              <a href="#faq" className="text-muted-foreground hover:text-warm-white transition-colors px-3 py-2 rounded-md text-sm font-medium">
                 FAQ
               </a>
             </div>

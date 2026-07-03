@@ -32,18 +32,21 @@ const Index = () => {
       <FAQ />
       
       {/* Final CTA */}
-      <section className="py-4 md:py-8 bg-card">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-background rounded-xl md:rounded-2xl p-4 md:p-8 border border-border shadow-metallic">
-            <h3 className="text-lg md:text-2xl font-bold text-electric-yellow mb-3 md:mb-6">
-              ¡Es hora de jugar!
-            </h3>
-            <p className="text-warm-white/80 mb-4 md:mb-8 text-sm md:text-lg">
-              No esperes más. Registrá tu equipo y comenzá a vivir la experiencia Se Juega.
-            </p>
-            <Button variant="cta" size="default" className="text-base md:text-lg px-8 md:px-12 py-3 md:py-4 h-auto shadow-glow">
-              <a href="#cta">Registrá tu Equipo Ahora Gratis!</a>
-            </Button>
+      <section className="py-16 md:py-24 bg-[hsl(150_22%_3%)]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative overflow-hidden text-center rounded-3xl p-10 md:p-16 border border-white/10 bg-gradient-to-b from-[hsl(150_40%_9%)] to-[hsl(150_40%_5%)]">
+            <div className="sj-blob w-[500px] h-[500px] -top-52 left-1/2 -translate-x-1/2 bg-bright-green/20 opacity-30" />
+            <div className="relative z-10">
+              <h3 className="text-3xl md:text-4xl font-bold text-warm-white mb-4">
+                ¡Es hora de jugar!
+              </h3>
+              <p className="text-muted-foreground mb-8 text-base md:text-lg max-w-xl mx-auto">
+                No esperes más. Registrá tu equipo y comenzá a vivir la experiencia Se Juega.
+              </p>
+              <Button variant="cta" size="lg" className="text-base md:text-lg px-10 md:px-12 py-4 h-auto">
+                <a href="#cta">Registrá tu Equipo Ahora Gratis!</a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
