@@ -1,10 +1,16 @@
 import { Button } from "@/components/ui/button";
+import rankingBg from "@/assets/ranking-bg.jpg";
 
 const PriorityAccessSection = () => {
   return (
     <section className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-3xl border border-bright-green/20 bg-gradient-to-br from-bright-green/10 to-electric-yellow/[0.03] p-8 md:p-14">
+          <img
+            src={rankingBg}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover opacity-[0.10]"
+          />
           <div className="sj-blob w-[400px] h-[400px] -top-40 -right-24 bg-metallic-green/40 opacity-30" />
 
           <div className="relative z-10 grid md:grid-cols-[1.2fr_1fr] gap-10 md:gap-12 items-center">
