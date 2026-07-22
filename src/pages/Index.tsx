@@ -9,6 +9,7 @@ import FAQ from "@/components/FAQ";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import problemBg from "@/assets/problem-bg.jpg";
 
 const Index = () => {
   return (
@@ -35,6 +36,11 @@ const Index = () => {
       <section className="py-16 md:py-24 bg-[hsl(150_22%_3%)]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden text-center rounded-3xl p-10 md:p-16 border border-white/10 bg-gradient-to-b from-[hsl(150_40%_9%)] to-[hsl(150_40%_5%)]">
+            <img
+              src={problemBg}
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover opacity-[0.10]"
+            />
             <div className="sj-blob w-[500px] h-[500px] -top-52 left-1/2 -translate-x-1/2 bg-bright-green/20 opacity-30" />
             <div className="relative z-10">
               <h3 className="text-3xl md:text-4xl font-bold text-warm-white mb-4">
