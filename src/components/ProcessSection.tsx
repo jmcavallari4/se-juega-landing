@@ -7,6 +7,7 @@ import rankingHover from "@/assets/ranking-hover.png";
 import registroHover from "@/assets/registro-hover.png";
 import coordinaHover from "@/assets/coordina-hover.png";
 import calificaHover from "@/assets/califica-hover.png";
+import problemBg from "@/assets/problem-bg.jpg";
 
 const ProcessSection = () => {
   const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -39,7 +40,7 @@ const ProcessSection = () => {
     },
     {
       number: "5",
-      title: "Jugá y califica",
+      title: "Jugá y calificá",
       description: "después del partido, ambos capitanes cargan el resultado y puntúan el comportamiento del rival.",
       hoverImage: calificaHover
     },
@@ -52,8 +53,18 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section id="como-funciona" className="py-16 md:py-24 bg-background">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="como-funciona" className="py-16 md:py-24 bg-background relative overflow-hidden">
+      <div className="absolute inset-0">
+        <img
+          src={problemBg}
+          alt=""
+          className="w-full h-full object-cover opacity-[0.10]"
+        />
+        <div className="absolute inset-0 bg-background/85" />
+      </div>
+      <div className="sj-blob w-[440px] h-[440px] -top-40 -right-32 bg-metallic-green/20 opacity-30" />
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
           <p className="sj-eyebrow mb-4">Cómo funciona</p>
           <h2 className="text-3xl md:text-4xl font-bold text-warm-white">
