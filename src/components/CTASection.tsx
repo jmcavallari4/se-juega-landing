@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import heroImage from "@/assets/hero-football.jpg";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -46,6 +47,14 @@ const CTASection = () => {
   };
   return (
     <section id="cta" className="py-16 md:py-24 relative overflow-hidden">
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt=""
+          className="w-full h-full object-cover opacity-[0.10]"
+        />
+        <div className="absolute inset-0 bg-background/85" />
+      </div>
       <div className="sj-blob w-[500px] h-[500px] -top-40 left-1/2 -translate-x-1/2 bg-bright-green/15 opacity-40" />
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
