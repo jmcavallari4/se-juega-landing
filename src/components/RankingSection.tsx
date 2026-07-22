@@ -1,8 +1,17 @@
 import rankingExample from "@/assets/ranking-example.png";
+import rankingBg from "@/assets/ranking-bg.jpg";
 
 const RankingSection = () => {
   return (
     <section id="ranking" className="py-16 md:py-24 relative overflow-hidden bg-[hsl(150_22%_3%)]">
+      <div className="absolute inset-0">
+        <img
+          src={rankingBg}
+          alt=""
+          className="w-full h-full object-cover opacity-[0.12]"
+        />
+        <div className="absolute inset-0 bg-[hsl(150_22%_3%)]/85" />
+      </div>
       <div className="sj-blob w-[460px] h-[460px] -bottom-40 -left-32 bg-metallic-green/20 opacity-25" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
