@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import solutionBg from "@/assets/solution-bg.jpg";
 
 const FAQ = () => {
   const faqs = [
@@ -50,8 +51,18 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-16 md:py-24 bg-[hsl(150_22%_3%)]">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-16 md:py-24 bg-[hsl(150_22%_3%)] relative overflow-hidden">
+      <div className="absolute inset-0">
+        <img
+          src={solutionBg}
+          alt=""
+          className="w-full h-full object-cover opacity-[0.10]"
+        />
+        <div className="absolute inset-0 bg-[hsl(150_22%_3%)]/85" />
+      </div>
+      <div className="sj-blob w-[400px] h-[400px] -bottom-40 -right-24 bg-metallic-green/20 opacity-25" />
+
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-10 md:mb-14">
           <p className="sj-eyebrow mb-4">Dudas</p>
           <h2 className="text-3xl md:text-4xl font-bold text-warm-white mb-3">
