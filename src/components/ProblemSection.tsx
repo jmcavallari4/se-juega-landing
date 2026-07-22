@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import problemBg from "@/assets/problem-bg.jpg";
 
 const ProblemSection = () => {
   const problems = [
@@ -21,6 +22,16 @@ const ProblemSection = () => {
 
   return (
     <section className="py-16 md:py-24 relative overflow-hidden">
+      <div className="absolute inset-0">
+        <img
+          src={problemBg}
+          alt=""
+          className="w-full h-full object-cover opacity-[0.12]"
+        />
+        <div className="absolute inset-0 bg-background/80" />
+      </div>
+      <div className="sj-blob w-[420px] h-[420px] top-0 -left-40 bg-metallic-green/25 opacity-40" />
+
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <p className="sj-eyebrow mb-4">El problema</p>
