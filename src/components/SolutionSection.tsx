@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import solutionBg from "@/assets/solution-bg.jpg";
 
 const SolutionSection = () => {
   const benefits = [
@@ -35,6 +36,14 @@ const SolutionSection = () => {
       id="ventajas"
       className="py-16 md:py-24 relative overflow-hidden bg-[hsl(150_22%_3%)]"
     >
+      <div className="absolute inset-0">
+        <img
+          src={solutionBg}
+          alt=""
+          className="w-full h-full object-cover opacity-[0.12]"
+        />
+        <div className="absolute inset-0 bg-[hsl(150_22%_3%)]/85" />
+      </div>
       <div className="sj-blob w-[500px] h-[500px] top-0 -right-36 bg-metallic-green/20 opacity-30" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
