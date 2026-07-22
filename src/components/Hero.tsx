@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/hero-football.jpg";
 
 const Hero = () => {
   return (
@@ -6,9 +7,18 @@ const Hero = () => {
       id="inicio"
       className="relative overflow-hidden pt-28 md:pt-36 pb-16 md:pb-24"
     >
-      {/* Blobs de fondo */}
-      <div className="sj-blob w-[600px] h-[600px] -top-56 -left-32 bg-metallic-green/30 opacity-40" />
-      <div className="sj-blob w-[480px] h-[480px] -bottom-64 -right-24 bg-[hsl(90_45%_25%)]/30 opacity-30" />
+      {/* Foto de fondo */}
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="Fútbol competitivo"
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/50" />
+      </div>
+
+      {/* Blob de acento */}
+      <div className="sj-blob w-[500px] h-[500px] -top-52 right-0 bg-bright-green/25 opacity-70" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 md:gap-14 items-center">
