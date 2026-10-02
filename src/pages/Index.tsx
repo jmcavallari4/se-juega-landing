@@ -6,10 +6,10 @@ import SolutionSection from "@/components/SolutionSection";
 import ProcessSection from "@/components/ProcessSection";
 import RankingSection from "@/components/RankingSection";
 import FAQ from "@/components/FAQ";
-import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import problemBg from "@/assets/problem-bg.jpg";
+import { getAppUrl, trackAppClick } from "@/lib/app-link";
 
 const Index = () => {
   return (
@@ -29,7 +29,6 @@ const Index = () => {
         </div>
       </aside>
       <RankingSection />
-      <CTASection />
       <FAQ />
       
       {/* Final CTA */}
@@ -49,8 +48,8 @@ const Index = () => {
               <p className="text-muted-foreground mb-8 text-base md:text-lg max-w-xl mx-auto">
                 No esperes más. Registrá tu equipo y comenzá a vivir la experiencia Se Juega.
               </p>
-              <Button variant="cta" size="lg" className="text-base md:text-lg px-10 md:px-12 py-4 h-auto">
-                <a href="#cta">Registrá tu Equipo Ahora Gratis!</a>
+              <Button asChild variant="cta" size="lg" className="text-base md:text-lg px-10 md:px-12 py-4 h-auto">
+                <a href={getAppUrl()} onClick={() => trackAppClick("cierre")}>Registrá tu Equipo Ahora Gratis!</a>
               </Button>
             </div>
           </div>

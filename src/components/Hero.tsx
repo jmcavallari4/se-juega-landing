@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-football.jpg";
+import { getAppUrl, trackAppClick } from "@/lib/app-link";
 
 const Hero = () => {
   return (
@@ -43,8 +44,8 @@ const Hero = () => {
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 items-center justify-center lg:justify-start animate-fade-in">
-              <Button variant="hero" size="lg" className="text-base md:text-lg px-8 py-4 h-auto">
-                <a href="#cta">🔘 Registrá tu Equipo Gratis!</a>
+              <Button asChild variant="hero" size="lg" className="text-base md:text-lg px-8 py-4 h-auto">
+                <a href={getAppUrl()} onClick={() => trackAppClick("hero")}>🔘 Registrá tu Equipo Gratis!</a>
               </Button>
             </div>
 

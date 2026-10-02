@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import rankingBg from "@/assets/ranking-bg.jpg";
+import { getAppUrl, trackAppClick } from "@/lib/app-link";
 
 const PriorityAccessSection = () => {
   return (
@@ -26,8 +27,8 @@ const PriorityAccessSection = () => {
                 costo, un lugar permanente al frente del ranking de su zona y un
                 canal directo con el fundador para proponer mejoras al producto.
               </p>
-              <Button variant="cta" size="lg" className="text-base md:text-lg px-8 py-4 h-auto">
-                <a href="#cta">¡Asegurar mi lugar ahora!</a>
+              <Button asChild variant="cta" size="lg" className="text-base md:text-lg px-8 py-4 h-auto">
+                <a href={getAppUrl()} onClick={() => trackAppClick("acceso_fundador")}>¡Asegurar mi lugar ahora!</a>
               </Button>
             </div>
 

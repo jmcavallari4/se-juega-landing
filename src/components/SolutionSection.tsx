@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import solutionBg from "@/assets/solution-bg.jpg";
+import { getAppUrl, trackAppClick } from "@/lib/app-link";
 
 const SolutionSection = () => {
   const benefits = [
@@ -86,8 +87,8 @@ const SolutionSection = () => {
             </span>
           </div>
           <div>
-            <Button variant="cta" size="lg" className="text-base md:text-lg px-10 py-4 h-auto">
-              <a href="#cta">Registrá tu Equipo Ahora Gratis!</a>
+            <Button asChild variant="cta" size="lg" className="text-base md:text-lg px-10 py-4 h-auto">
+              <a href={getAppUrl()} onClick={() => trackAppClick("solucion")}>Registrá tu Equipo Ahora Gratis!</a>
             </Button>
           </div>
         </div>

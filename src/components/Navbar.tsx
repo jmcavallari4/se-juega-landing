@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import { getAppUrl, trackAppClick } from "@/lib/app-link";
 import { useState } from "react";
 import {
   Drawer,
@@ -43,8 +44,8 @@ const Navbar = () => {
 
           {/* Desktop CTA button */}
           <div className="hidden md:block">
-            <Button variant="cta" size="lg">
-              <a href="#cta">Registrate Gratis!</a>
+            <Button asChild variant="cta" size="lg">
+              <a href={getAppUrl()} onClick={() => trackAppClick("navbar")}>Registrate Gratis!</a>
             </Button>
           </div>
 
@@ -83,8 +84,8 @@ const Navbar = () => {
                   </DrawerClose>
                   <div className="pt-4">
                     <DrawerClose asChild>
-                      <Button variant="cta" size="lg" className="w-full">
-                        <a href="#cta">Registrate Gratis!</a>
+                      <Button asChild variant="cta" size="lg" className="w-full">
+                        <a href={getAppUrl()} onClick={() => trackAppClick("navbar_mobile")}>Registrate Gratis!</a>
                       </Button>
                     </DrawerClose>
                   </div>
