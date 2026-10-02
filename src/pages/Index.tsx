@@ -49,7 +49,7 @@ const Index = () => {
                 No esperes más. Registrá tu equipo y comenzá a vivir la experiencia Se Juega.
               </p>
               <Button asChild variant="cta" size="lg" className="text-base md:text-lg px-10 md:px-12 py-4 h-auto">
-                <a href={getAppUrl()} onClick={() => trackAppClick("cierre")}>Registrá tu Equipo Ahora Gratis!</a>
+                <a href={getAppUrl()} onClick={() => trackAppClick("cierre")}>Ingresá a la app</a>
               </Button>
             </div>
           </div>

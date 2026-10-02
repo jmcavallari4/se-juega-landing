@@ -45,7 +45,7 @@ const Navbar = () => {
           {/* Desktop CTA button */}
           <div className="hidden md:block">
             <Button asChild variant="cta" size="lg">
-              <a href={getAppUrl()} onClick={() => trackAppClick("navbar")}>Registrate Gratis!</a>
+              <a href={getAppUrl()} onClick={() => trackAppClick("navbar")}>Ingresá a la app</a>
             </Button>
           </div>
 
@@ -85,7 +85,7 @@ const Navbar = () => {
                   <div className="pt-4">
                     <DrawerClose asChild>
                       <Button asChild variant="cta" size="lg" className="w-full">
-                        <a href={getAppUrl()} onClick={() => trackAppClick("navbar_mobile")}>Registrate Gratis!</a>
+                        <a href={getAppUrl()} onClick={() => trackAppClick("navbar_mobile")}>Ingresá a la app</a>
                       </Button>
                     </DrawerClose>
                   </div>

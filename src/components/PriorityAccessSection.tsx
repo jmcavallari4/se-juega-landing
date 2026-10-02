@@ -28,7 +28,7 @@ const PriorityAccessSection = () => {
                 canal directo con el fundador para proponer mejoras al producto.
               </p>
               <Button asChild variant="cta" size="lg" className="text-base md:text-lg px-8 py-4 h-auto">
-                <a href={getAppUrl()} onClick={() => trackAppClick("acceso_fundador")}>¡Asegurar mi lugar ahora!</a>
+                <a href={getAppUrl()} onClick={() => trackAppClick("acceso_fundador")}>Ingresá a la app</a>
               </Button>
             </div>
 

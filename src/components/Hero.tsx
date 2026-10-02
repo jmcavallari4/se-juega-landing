@@ -45,7 +45,7 @@ const Hero = () => {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 items-center justify-center lg:justify-start animate-fade-in">
               <Button asChild variant="hero" size="lg" className="text-base md:text-lg px-8 py-4 h-auto">
-                <a href={getAppUrl()} onClick={() => trackAppClick("hero")}>🔘 Registrá tu Equipo Gratis!</a>
+                <a href={getAppUrl()} onClick={() => trackAppClick("hero")}>Ingresá a la app</a>
               </Button>
             </div>
 

@@ -88,7 +88,7 @@ const SolutionSection = () => {
           </div>
           <div>
             <Button asChild variant="cta" size="lg" className="text-base md:text-lg px-10 py-4 h-auto">
-              <a href={getAppUrl()} onClick={() => trackAppClick("solucion")}>Registrá tu Equipo Ahora Gratis!</a>
+              <a href={getAppUrl()} onClick={() => trackAppClick("solucion")}>Ingresá a la app</a>
             </Button>
           </div>
         </div>
