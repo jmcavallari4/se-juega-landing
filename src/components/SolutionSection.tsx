@@ -83,7 +83,7 @@ const SolutionSection = () => {
           <div className="inline-flex mb-5">
             <span className="sj-pill">
               <span className="sj-dot" />
-              Ya hay 52 equipos en la waitlist
+              Gratis para siempre si te registrás en octubre
             </span>
           </div>
           <div>

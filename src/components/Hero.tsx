@@ -61,9 +61,8 @@ const Hero = () => {
                 ))}
               </div>
               <p className="text-sm md:text-base text-muted-foreground">
-                <span className="text-warm-white font-semibold">52 equipos</span>{" "}
-                ya en la waitlist — quedan{" "}
-                <span className="text-warm-white font-semibold">48 cupos fundador</span>
+                Registrándote en octubre, las funciones premium son{" "}
+                <span className="text-warm-white font-semibold">gratis para siempre</span>
               </p>
             </div>
           </div>

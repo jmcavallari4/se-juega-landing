@@ -10,7 +10,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "¿El servicio es pago?",
-      answer: "Los primeros 100 equipos registrados obtienen el rango de \"miembro fundador\": acceso completo al plan premium, gratis para siempre. A partir del equipo 101, el acceso tiene un costo de USD 5 por equipo al mes."
+      answer: "No. Usar Se Juega es gratis. Además, los equipos que se registren durante octubre son fundadores: tienen acceso gratis para siempre a todas las funciones premium que se sumen en el futuro."
     },
     {
       question: "¿Qué pasa si no encuentro rival al principio?",

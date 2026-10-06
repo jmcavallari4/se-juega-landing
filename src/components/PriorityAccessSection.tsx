@@ -19,13 +19,15 @@ const PriorityAccessSection = () => {
             <div>
               <p className="sj-eyebrow mb-4">Acceso fundador</p>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-warm-white mb-4 leading-tight">
-                Quedan <span className="text-electric-yellow">48 lugares</span> de
-                los 100 gratis para siempre
+                Registrate en <span className="text-electric-yellow">octubre</span> y
+                las funciones premium son gratis para siempre
               </h2>
               <p className="text-base md:text-lg text-muted-foreground mb-7 leading-relaxed">
-                Los miembros fundadores acceden al plan premium completo sin
-                costo, un lugar permanente al frente del ranking de su zona y un
-                canal directo con el fundador para proponer mejoras al producto.
+                Los equipos que se registren durante octubre son fundadores:
+                acceden gratis para siempre a todas las funciones premium que
+                se sumen en el futuro, tienen un lugar permanente al frente del
+                ranking de su zona y un canal directo con el fundador para
+                proponer mejoras.
               </p>
               <Button asChild variant="cta" size="lg" className="text-base md:text-lg px-8 py-4 h-auto">
                 <a href={getAppUrl()} onClick={() => trackAppClick("acceso_fundador")}>Ingresá a la app</a>
@@ -34,20 +36,14 @@ const PriorityAccessSection = () => {
 
             {/* Contador */}
             <div className="text-center rounded-2xl border border-border bg-background/50 backdrop-blur-sm p-7 md:p-8">
-              <div className="font-display text-5xl md:text-6xl font-bold leading-none sj-grad-text">
-                52/100
-              </div>
-              <p className="text-sm text-muted-foreground mt-3">
-                cupos fundador ocupados
+              <p className="text-sm text-muted-foreground mb-3">
+                Último día para entrar como fundador
               </p>
-              <div className="w-full h-2.5 bg-white/10 rounded-full mt-5 overflow-hidden">
-                <div
-                  className="h-full bg-gradient-hero rounded-full"
-                  style={{ width: "52%" }}
-                />
+              <div className="font-display text-5xl md:text-6xl font-bold leading-none sj-grad-text">
+                31/10
               </div>
-              <p className="text-xs text-muted-foreground/70 mt-3">
-                Después del cupo 100, USD 5/equipo/mes
+              <p className="text-xs text-muted-foreground/70 mt-4">
+                Arrancamos en noviembre
               </p>
             </div>
           </div>
