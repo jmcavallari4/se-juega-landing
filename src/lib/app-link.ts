@@ -3,6 +3,8 @@ export const APP_URL = "https://app.sejuega.net";
 // El APK vive en la app (un solo archivo); la landing solo apunta ahí.
 export const APK_URL = "https://app.sejuega.net/sejuega.apk";
 
+export const COMMUNITY_URL = "https://chat.whatsapp.com/H1hB0DGMLkW9i5ypX3b58y";
+
 export const isAndroid = () =>
   typeof navigator !== "undefined" && /android/i.test(navigator.userAgent);
 

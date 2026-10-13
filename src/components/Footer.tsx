@@ -39,6 +39,14 @@ const Footer = () => {
             >
               WhatsApp
             </a>
+            <a
+              href="https://chat.whatsapp.com/H1hB0DGMLkW9i5ypX3b58y"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-electric-yellow transition-colors text-sm md:text-base"
+            >
+              Comunidad
+            </a>
           </div>
         </div>
 

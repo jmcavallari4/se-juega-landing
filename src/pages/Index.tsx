@@ -9,7 +9,7 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import problemBg from "@/assets/problem-bg.jpg";
-import { getAppUrl, trackAppClick } from "@/lib/app-link";
+import { COMMUNITY_URL, getAppUrl, trackAppClick } from "@/lib/app-link";
 
 const Index = () => {
   return (
@@ -48,9 +48,14 @@ const Index = () => {
               <p className="text-muted-foreground mb-8 text-base md:text-lg max-w-xl mx-auto">
                 No esperes más. Registrá tu equipo y comenzá a vivir la experiencia Se Juega.
               </p>
-              <Button asChild variant="cta" size="lg" className="text-base md:text-lg px-10 md:px-12 py-4 h-auto">
-                <a href={getAppUrl()} onClick={() => trackAppClick("cierre")}>Ingresá a la app</a>
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                <Button asChild variant="cta" size="lg" className="text-base md:text-lg px-10 md:px-12 py-4 h-auto">
+                  <a href={getAppUrl()} onClick={() => trackAppClick("cierre")}>Ingresá a la app</a>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="text-base md:text-lg px-8 py-4 h-auto rounded-xl bg-transparent border-white/20 text-warm-white hover:bg-white/10 hover:text-warm-white">
+                  <a href={COMMUNITY_URL} target="_blank" rel="noopener noreferrer" onClick={() => trackAppClick("comunidad_cierre")}>💬 Sumate a la comunidad</a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>

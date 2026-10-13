@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-football.jpg";
 import { useEffect, useState } from "react";
-import { APK_URL, getAppUrl, isAndroid, trackAppClick } from "@/lib/app-link";
+import { APK_URL, COMMUNITY_URL, getAppUrl, isAndroid, trackAppClick } from "@/lib/app-link";
 
 const Hero = () => {
   const [android, setAndroid] = useState(false);
@@ -71,6 +71,15 @@ const Hero = () => {
             <p className="mt-3 text-xs md:text-sm text-muted-foreground">
               En iPhone: abrí app.sejuega.net en Safari y tocá Compartir → Agregar a inicio.
             </p>
+            <a
+              href={COMMUNITY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackAppClick("comunidad_hero")}
+              className="mt-4 inline-flex items-center gap-2 text-sm md:text-base font-semibold text-bright-green hover:text-warm-white transition-colors"
+            >
+              💬 Sumate a la comunidad de WhatsApp
+            </a>
 
             <div className="mt-7 flex items-center gap-3 justify-center lg:justify-start animate-fade-in">
               <div className="flex -space-x-3">
