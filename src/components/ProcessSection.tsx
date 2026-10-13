@@ -29,7 +29,7 @@ const ProcessSection = () => {
     {
       number: "3",
       title: "Coordiná el partido",
-      description: "hablá con el capitán rival y organizá lugar, día y hora.",
+      description: "en la comunidad de WhatsApp de Se Juega hablás con el capitán rival y organizan lugar, día y hora.",
       hoverImage: coordinaHover
     },
     {

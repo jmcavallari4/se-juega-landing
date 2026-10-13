@@ -4,6 +4,7 @@ import PriorityAccessSection from "@/components/PriorityAccessSection";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import ProcessSection from "@/components/ProcessSection";
+import CommunitySection from "@/components/CommunitySection";
 import RankingSection from "@/components/RankingSection";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -20,7 +21,8 @@ const Index = () => {
       <ProblemSection />
       <SolutionSection />
       <ProcessSection />
-      
+      <CommunitySection />
+
       <aside aria-label="Disponibilidad geográfica" className="py-2">
         <div className="max-w-3xl mx-auto px-4">
           <p className="text-xs md:text-sm text-muted-foreground text-center">
@@ -52,9 +54,9 @@ const Index = () => {
                 <Button asChild variant="cta" size="lg" className="text-base md:text-lg px-10 md:px-12 py-4 h-auto">
                   <a href={getAppUrl()} onClick={() => trackAppClick("cierre")}>Ingresá a la app</a>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="text-base md:text-lg px-8 py-4 h-auto rounded-xl bg-transparent border-white/20 text-warm-white hover:bg-white/10 hover:text-warm-white">
-                  <a href={COMMUNITY_URL} target="_blank" rel="noopener noreferrer" onClick={() => trackAppClick("comunidad_cierre")}>💬 Sumate a la comunidad</a>
-                </Button>
+                <a href={COMMUNITY_URL} target="_blank" rel="noopener noreferrer" onClick={() => trackAppClick("comunidad_cierre")} className="inline-flex items-center justify-center rounded-xl bg-[#25D366] text-[#06301a] font-bold text-base md:text-lg px-8 py-4 hover:-translate-y-0.5 transition-all">
+                  💬 Coordiná partidos en la comunidad
+                </a>
               </div>
             </div>
           </div>

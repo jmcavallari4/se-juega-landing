@@ -13,6 +13,10 @@ const FAQ = () => {
       answer: "No. Usar Se Juega es gratis. Además, los equipos que se registren durante octubre son fundadores: tienen acceso gratis para siempre a todas las funciones premium que se sumen en el futuro."
     },
     {
+      question: "¿Cómo coordino el partido con el rival?",
+      answer: "En la comunidad de WhatsApp de Se Juega. Ahí están todos los equipos: presentás el tuyo, buscás rival y arreglás lugar, día y hora con el otro capitán. Después del partido cargan el resultado en la app para que sume al ranking. El link para entrar está en esta página."
+    },
+    {
       question: "¿Qué pasa si no encuentro rival al principio?",
       answer: "Si en tus primeros 15 días registrado no conseguís ningún equipo rival para coordinar un partido a través de Se Juega, te conectamos personalmente con equipos de tu zona."
     },

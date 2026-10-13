@@ -36,6 +36,9 @@ const Navbar = () => {
               <a href="#ranking" className="text-muted-foreground hover:text-warm-white transition-colors px-3 py-2 rounded-md text-sm font-medium">
                 Ranking
               </a>
+              <a href="#comunidad" className="text-muted-foreground hover:text-warm-white transition-colors px-3 py-2 rounded-md text-sm font-medium">
+                Comunidad
+              </a>
               <a href="#faq" className="text-muted-foreground hover:text-warm-white transition-colors px-3 py-2 rounded-md text-sm font-medium">
                 FAQ
               </a>
@@ -75,6 +78,11 @@ const Navbar = () => {
                   <DrawerClose asChild>
                     <a href="#ranking" className="block text-warm-white hover:text-electric-yellow transition-colors py-3 text-lg font-medium border-b border-border">
                       Ranking
+                    </a>
+                  </DrawerClose>
+                  <DrawerClose asChild>
+                    <a href="#comunidad" className="block text-warm-white hover:text-electric-yellow transition-colors py-3 text-lg font-medium border-b border-border">
+                      Comunidad
                     </a>
                   </DrawerClose>
                   <DrawerClose asChild>

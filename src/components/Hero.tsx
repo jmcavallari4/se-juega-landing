@@ -76,9 +76,13 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackAppClick("comunidad_hero")}
-              className="mt-4 inline-flex items-center gap-2 text-sm md:text-base font-semibold text-bright-green hover:text-warm-white transition-colors"
+              className="mt-5 flex items-center gap-4 max-w-xl mx-auto lg:mx-0 text-left rounded-2xl border border-[#25D366]/50 bg-[#25D366]/10 px-5 py-4 hover:bg-[#25D366]/20 transition-colors"
             >
-              💬 Sumate a la comunidad de WhatsApp
+              <span className="flex-shrink-0 w-11 h-11 rounded-full bg-[#25D366] flex items-center justify-center text-xl">💬</span>
+              <span>
+                <span className="block font-bold text-warm-white text-base md:text-lg">Coordiná tus partidos en la comunidad de WhatsApp</span>
+                <span className="block text-sm text-muted-foreground">Ahí están los equipos de Se Juega para buscar rival y arreglar el partido.</span>
+              </span>
             </a>
 
             <div className="mt-7 flex items-center gap-3 justify-center lg:justify-start animate-fade-in">
