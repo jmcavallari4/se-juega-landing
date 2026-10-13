@@ -1,5 +1,11 @@
 export const APP_URL = "https://app.sejuega.net";
 
+// El APK vive en la app (un solo archivo); la landing solo apunta ahí.
+export const APK_URL = "https://app.sejuega.net/sejuega.apk";
+
+export const isAndroid = () =>
+  typeof navigator !== "undefined" && /android/i.test(navigator.userAgent);
+
 // Link a la app que conserva los UTM de la visita, para no perder la atribución.
 export const getAppUrl = () =>
   typeof window === "undefined" ? APP_URL : APP_URL + window.location.search;

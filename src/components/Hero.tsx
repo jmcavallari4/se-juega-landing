@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-football.jpg";
-import { getAppUrl, trackAppClick } from "@/lib/app-link";
+import { useEffect, useState } from "react";
+import { APK_URL, getAppUrl, isAndroid, trackAppClick } from "@/lib/app-link";
 
 const Hero = () => {
+  const [android, setAndroid] = useState(false);
+  useEffect(() => setAndroid(isAndroid()), []);
+
   return (
     <section
       id="inicio"
@@ -44,10 +48,29 @@ const Hero = () => {
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 items-center justify-center lg:justify-start animate-fade-in">
-              <Button asChild variant="hero" size="lg" className="text-base md:text-lg px-8 py-4 h-auto">
-                <a href={getAppUrl()} onClick={() => trackAppClick("hero")}>Ingresá a la app</a>
-              </Button>
+              {android ? (
+                <>
+                  <Button asChild variant="hero" size="lg" className="text-base md:text-lg px-8 py-4 h-auto">
+                    <a href={APK_URL} onClick={() => trackAppClick("descarga_android")}>Descargar la app para Android</a>
+                  </Button>
+                  <a href={getAppUrl()} onClick={() => trackAppClick("hero")} className="text-warm-white/80 underline underline-offset-4 hover:text-warm-white">
+                    o ingresá desde el navegador
+                  </a>
+                </>
+              ) : (
+                <>
+                  <Button asChild variant="hero" size="lg" className="text-base md:text-lg px-8 py-4 h-auto">
+                    <a href={getAppUrl()} onClick={() => trackAppClick("hero")}>Ingresá a la app</a>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="text-base md:text-lg px-6 py-4 h-auto rounded-xl bg-transparent border-white/20 text-warm-white hover:bg-white/10 hover:text-warm-white">
+                    <a href={APK_URL} onClick={() => trackAppClick("descarga_android")}>Descargar la app para Android</a>
+                  </Button>
+                </>
+              )}
             </div>
+            <p className="mt-3 text-xs md:text-sm text-muted-foreground">
+              En iPhone: abrí app.sejuega.net en Safari y tocá Compartir → Agregar a inicio.
+            </p>
 
             <div className="mt-7 flex items-center gap-3 justify-center lg:justify-start animate-fade-in">
               <div className="flex -space-x-3">
