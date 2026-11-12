@@ -20,8 +20,13 @@ Revisar cada PNG generado (abrirlo y mirarlo) antes de publicar: nada cortado, d
 
 | Pieza | Cantidad | Día y hora (America/Buenos_Aires) | Dónde |
 |---|---|---|---|
-| Carrusel de fotos 9:16 | 2 | martes 19:00 y viernes 19:00 | TikTok (modo foto, música automática) |
+| Carrusel 9:16 | 2 | martes 19:00 y viernes 19:00 | TikTok (modo foto, música automática) |
+| El mismo carrusel en 4:5 | 2 | martes 19:00 y viernes 19:00 | Feed de Instagram y página de Facebook |
 | Historia 9:16 (1 placa) | 3 | lunes, miércoles y viernes 12:00 | Historias de Instagram y Facebook |
+| Novedades con datos (solo si hay algo nuevo) | 0 o 1 | domingo 19:00 | Feed de Instagram y página de Facebook (4:5) |
+| Guion de video de humor | 1 | (lo graba Juan si quiere) | Fila en Notion, no se publica |
+
+De los 2 carruseles de la semana: uno es sobre una **función de la app** y el otro de humor, debate, tips o cultura (banco de temas). Alternar el orden: una semana la función va el martes, la siguiente el viernes.
 
 ## Carruseles (TikTok)
 
@@ -37,6 +42,35 @@ Revisar cada PNG generado (abrirlo y mirarlo) antes de publicar: nada cortado, d
 - Una sola placa 9:16, tipo `portada` o `cierre`. Que se entienda sola: sin encuestas ni stickers (no se pueden automatizar).
 - Variar: ¿ya tenés partido esta semana?, cómo funciona el ranking (todos arrancan en 1200, ganarle a uno de más arriba suma más, el empate cuenta), invitación a la comunidad de WhatsApp, "si no conseguís rival, te lo conseguimos", frase de vestuario.
 - Datos y equipos solo reales. Si no hay un dato confirmado, no se usa.
+
+## Funciones de la app (para el carrusel de funciones)
+
+Solo estas funciones existen. No inventar otras ni detalles que no estén acá:
+- Registrar el equipo gratis en la app (web app.sejuega.net o APK de Android), con nombre, zona y escudo.
+- Buscar rival de tu nivel y de tu zona, y desafiarlo desde la app. El rival recibe el desafío y lo acepta.
+- Coordinar el partido (día, hora, cancha) en la comunidad de WhatsApp de Se Juega.
+- Cargar el resultado del partido en la app.
+- Ranking por zona con sistema ELO: todos arrancan en 1200; ganarle a uno de más arriba suma más; el empate cuenta (el de abajo suma, el de arriba resta); la diferencia de goles no cuenta. Una sola tabla para todas las categorías (masculino, femenino, mixto), con filtro por zona.
+- Si no conseguís rival, desde la comunidad te ayudamos a conseguirlo.
+Ideas: "Cómo desafiar a un rival en 3 pasos" (placa `pasos`), "Cómo se suman puntos en el ranking", "Por qué ganarle al primero vale más", "Qué pasa si empatás", "De la app a la cancha: cómo se arma un partido", "¿Qué es la comunidad de Se Juega?". Una idea por carrusel, sin repetir lo de `usados.md`. Cerrar con `cierre` invitando a registrar el equipo.
+
+## Instagram y Facebook (feed)
+
+- Mismo contenido que el carrusel de TikTok, renderizado con `"formato": "4:5"` (3 a 6 placas; si el de TikTok tiene más, condensar).
+- Texto del pie: 2 o 3 líneas cortas, 1 emoji como mucho por párrafo, cierre "Link en la bio 👆" y hashtags: #futbolamateur #futbol5 #futbolargentina #futbolcaba #sejuega
+- Metricool: `providers: [{"network":"instagram"},{"network":"facebook"}]`, `media` = URLs en orden, `instagramData: {"type":"POST"}`, `facebookData: {"type":"POST"}`, `autoPublish: true`.
+
+## Novedades con datos (solo si hay algo nuevo)
+
+Antes de armar la semana, consultar los equipos de la app: POST https://wdnpzdhdolvvdjyjfvfd.supabase.co/rest/v1/rpc/get_team_rankings con headers `apikey: sb_publishable_LH3ondk7ait067B0EyKYeg_KD-ukpop` y `Content-Type: application/json`, body `{}`. Devuelve name, zone, barrio_caba, pba_localidad, shield_url, rating, matches_played. Si no se puede consultar, saltear esta parte.
+- Si hay 2 o más equipos que no están en "Equipos ya presentados" de `usados.md`: publicación "Nuevos equipos" (portada + placa `equipos` con hasta 4 equipos, escudo = shield_url + cierre).
+- Si aparecieron partidos nuevos (matches_played subió respecto de lo publicado): avisarlo en la notificación a Juan con los datos, porque la base no dice quién jugó contra quién; no publicar un resultado sin rival y marcador confirmados.
+- Si no hay nada nuevo, no se publica nada de esto. Nunca inventar equipos, cifras ni resultados.
+- Agregar los equipos publicados a `usados.md`.
+
+## Guion de video de humor (Notion)
+
+Crear 1 fila en la base de Notion "Se Juega · Publicaciones (Instagram y TikTok)" (data source collection://65808159-d405-477d-8d3f-446a96d3a0b9) con: Publicación = título, Red = TikTok, Tipo = Humor, Publicar el = miércoles 20:00 de esa semana, Estado = "Para revisar", Semana = fecha del lunes, Texto = guion: idea en una línea; texto en pantalla (máximo 2 frases cortas); qué filmar con el celular en la cancha (sin caras de gente que no aceptó); qué tipo de audio en tendencia usar (sin inventar nombres de canciones); descripción + hashtags. Situación que todo jugador de F5 vivió; Se Juega solo al final y sin forzar. Leer antes las filas existentes para no repetir ideas y aplicar lo que Juan escribió en "Comentarios".
 
 ## Banco de temas para carruseles
 
