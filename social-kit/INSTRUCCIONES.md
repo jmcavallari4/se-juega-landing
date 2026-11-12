@@ -45,14 +45,7 @@ De los 2 carruseles de la semana: uno es sobre una **función de la app** y el o
 
 ## Funciones de la app (para el carrusel de funciones)
 
-Solo estas funciones existen. No inventar otras ni detalles que no estén acá:
-- Registrar el equipo gratis en la app (web app.sejuega.net o APK de Android), con nombre, zona y escudo.
-- Buscar rival de tu nivel y de tu zona, y desafiarlo desde la app. El rival recibe el desafío y lo acepta.
-- Coordinar el partido (día, hora, cancha) en la comunidad de WhatsApp de Se Juega.
-- Cargar el resultado del partido en la app.
-- Ranking por zona con sistema ELO: todos arrancan en 1200; ganarle a uno de más arriba suma más; el empate cuenta (el de abajo suma, el de arriba resta); la diferencia de goles no cuenta. Una sola tabla para todas las categorías (masculino, femenino, mixto), con filtro por zona.
-- Si no conseguís rival, desde la comunidad te ayudamos a conseguirlo.
-Ideas: "Cómo desafiar a un rival en 3 pasos" (placa `pasos`), "Cómo se suman puntos en el ranking", "Por qué ganarle al primero vale más", "Qué pasa si empatás", "De la app a la cancha: cómo se arma un partido", "¿Qué es la comunidad de Se Juega?". Una idea por carrusel, sin repetir lo de `usados.md`. Cerrar con `cierre` invitando a registrar el equipo.
+La única fuente es `funciones.md` (sale del código de la app). No inventar funciones ni detalles que no estén ahí. Una idea por carrusel, sin repetir lo de `usados.md`; la placa `pasos` sirve para explicar procesos. Cerrar con `cierre` invitando a registrar el equipo. Para las historias que hablen de la app, usar la misma fuente.
 
 ## Instagram y Facebook (feed)
 
