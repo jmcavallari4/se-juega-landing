@@ -23,7 +23,7 @@ Revisar cada PNG generado (abrirlo y mirarlo) antes de publicar: nada cortado, d
 | Carrusel 9:16 | 2 | martes 19:00 y viernes 19:00 | TikTok (modo foto, música automática) |
 | El mismo carrusel en 4:5 | 2 | martes 19:00 y viernes 19:00 | Feed de Instagram y página de Facebook |
 | Historia 9:16 (1 placa) | 3 | lunes, miércoles y viernes 12:00 | Historias de Instagram y Facebook |
-| Novedades con datos (solo si hay algo nuevo) | 0 o 1 | domingo 19:00 | Feed de Instagram y página de Facebook (4:5) |
+| Novedades con datos (solo si hay algo nuevo) | 0 o 1 | lunes 19:00 | Feed de Instagram y página de Facebook (4:5) |
 | Guion de video de humor | 1 | (lo graba Juan si quiere) | Fila en Notion, no se publica |
 
 De los 2 carruseles de la semana: uno es sobre una **función de la app** y el otro de humor, debate, tips o cultura (banco de temas). Alternar el orden: una semana la función va el martes, la siguiente el viernes.
