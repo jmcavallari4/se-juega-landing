@@ -82,6 +82,11 @@ Crear 1 fila en la base de Notion "Se Juega · Publicaciones (Instagram y TikTok
 4. Qué filmar con el celular en la cancha (sin caras de gente que no aceptó), qué tipo de audio en tendencia usar (sin inventar nombres de canciones), y descripción con el gancho en los primeros 125 caracteres + hashtags.
 Situación que todo jugador de F5 vivió; una sola idea por video; Se Juega solo al final y sin forzar. Nunca inventar números ni historias como si fueran reales. Leer antes las filas existentes para no repetir ideas y aplicar lo que Juan escribió en "Comentarios".
 
+## Lo que aprendimos (`aprendizajes.md` y `respuestas.md`)
+
+- `aprendizajes.md`: lo escribe el reporte de los lunes con números (qué publicaciones rindieron más por múltiplo sobre el promedio y por compartidos, cuáles no). Leerlo antes de elegir temas: hacer más de lo que funcionó y dejar de hacer lo que no.
+- `respuestas.md`: lo que la gente responde a la historia-pregunta de los miércoles y las preguntas que se repiten en los comentarios. Usar esas palabras textuales como ganchos y como temas.
+
 ## Lo que está funcionando (`swipe.md`)
 
 Una vez por mes, la rutina "búsqueda mensual de ganchos" deja en `social-kit/swipe.md` las formas de gancho que más rindieron en cuentas parecidas (fútbol amateur y humor futbolero), medidas contra el promedio de cada cuenta. Si existe, leerlo antes de elegir temas y ganchos: pesa más que el banco de temas. Copiar la forma del gancho, nunca el contenido ni el video de otros.
