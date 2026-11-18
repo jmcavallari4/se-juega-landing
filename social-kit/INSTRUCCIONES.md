@@ -30,7 +30,14 @@ De los 2 carruseles de la semana: uno es sobre una **función de la app** y el o
 
 ## Carruseles (TikTok)
 
-- 5 a 7 placas: `portada` de tapa + contenido + `cierre`.
+- 6 a 8 placas, en este orden:
+  1. **Portada**: el gancho en **6 palabras como máximo**, grande. De la portada depende casi todo el resultado.
+  2. **Placa 2 que funcione sola**: Instagram vuelve a mostrar el carrusel desde una placa más adelante a quien no lo abrió, así que la 2 no puede ser introducción; tiene que ser el planteo o lo que está en juego, entendible sin la portada.
+  3. **Una idea por placa**: título de 3 a 7 palabras y como mucho 25 palabras abajo. Si necesita más, son dos placas.
+  4. **Resumen** (anteúltima): todo el carrusel en una lista corta, que se entienda sin contexto. Es la placa que la gente captura y le manda a un amigo.
+  5. **Cierre** con una sola acción.
+- **Numerar las placas** en la `etiqueta` (ej. "2/7", o "TIPO 1 · 2/7"): si se ve cuánto falta, más gente llega al final.
+- Si existe `swipe.md`, usarlo para elegir la forma del gancho de la portada (es lo que está funcionando en cuentas parecidas).
 - La app NO es el tema. Aparece solo en el `cierre` (ej.: "¿A tu equipo le falta rival? Sumalo {{gratis}} a Se Juega", boton "sejuega.net").
 - Temas: rotar entre las líneas del banco. No repetir nada de `usados.md`.
 - Tono: español rioplatense, humor de vestuario, frases cortas que den ganas de etiquetar a un amigo. Nada de marketing. Nada ofensivo, nada sobre árbitros, jugadores, clubes o equipos reales, ni política.
@@ -39,7 +46,11 @@ De los 2 carruseles de la semana: uno es sobre una **función de la app** y el o
 
 ## Historias (Instagram y Facebook)
 
-- Una sola placa 9:16, tipo `portada` o `cierre`. Que se entienda sola: sin encuestas ni stickers (no se pueden automatizar).
+Las historias las ven casi solo los que ya siguen: sirven para mantenerlos cerca y para que hablen con la cuenta, no para crecer. El texto solo sobre fondo es lo que más se saltea, así que cada historia tiene que pedir algo concreto.
+- Una sola placa 9:16, tipo `portada` o `cierre`. No se pueden poner stickers (encuesta, caja de preguntas) desde Metricool, así que la interacción se pide por mensaje.
+- De las 3 de la semana, **la del miércoles es siempre una pregunta para que respondan por mensaje**: título con la pregunta (ej. "¿F5 o F7?", "¿Qué es lo peor de organizar el partido?", "¿En qué barrio juegan?") y bajada "Respondenos por mensaje 👇". Las respuestas las lee la rutina de Instagram y sirven como ganchos para los videos y carruseles, con las palabras exactas de la gente.
+- Las otras dos: recordatorio con una sola acción (ej. "¿Ya tenés rival para el finde? Link en la bio").
+- Una idea por placa, hablándole a una persona ("vos"). Nunca repostear una publicación del feed sin decir por qué vale la pena verla.
 - Variar: ¿ya tenés partido esta semana?, cómo funciona el ranking (todos arrancan en 1200, ganarle a uno de más arriba suma más, el empate cuenta), invitación a la comunidad de WhatsApp, "si no conseguís rival, te lo conseguimos", frase de vestuario.
 - Datos y equipos solo reales. Si no hay un dato confirmado, no se usa.
 
@@ -51,6 +62,7 @@ La única fuente es `funciones.md` (sale del código de la app). No inventar fun
 
 - Mismo contenido que el carrusel de TikTok, renderizado con `"formato": "4:5"` (3 a 6 placas; si el de TikTok tiene más, condensar).
 - Texto del pie: 2 o 3 líneas cortas, 1 emoji como mucho por párrafo, cierre "Link en la bio 👆" y hashtags: #futbolamateur #futbol5 #futbolargentina #futbolcaba #sejuega
+- **Regla de los 125 caracteres**: Instagram muestra solo los primeros ~125 caracteres antes del "más". El gancho y la razón para seguir leyendo van ahí, sin saludo ni introducción. Contar los caracteres de la primera parte antes de programar. Vale también para la descripción de TikTok.
 - Metricool: `providers: [{"network":"instagram"},{"network":"facebook"}]`, `media` = URLs en orden, `instagramData: {"type":"POST"}`, `facebookData: {"type":"POST"}`, `autoPublish: true`.
 
 ## Novedades con datos (solo si hay algo nuevo)
@@ -63,7 +75,16 @@ Antes de armar la semana, consultar los equipos de la app: POST https://wdnpzdhd
 
 ## Guion de video de humor (Notion)
 
-Crear 1 fila en la base de Notion "Se Juega · Publicaciones (Instagram y TikTok)" (data source collection://65808159-d405-477d-8d3f-446a96d3a0b9) con: Publicación = título, Red = TikTok, Tipo = Humor, Publicar el = miércoles 20:00 de esa semana, Estado = "Para revisar", Semana = fecha del lunes, Texto = guion: idea en una línea; texto en pantalla (máximo 2 frases cortas); qué filmar con el celular en la cancha (sin caras de gente que no aceptó); qué tipo de audio en tendencia usar (sin inventar nombres de canciones); descripción + hashtags. Situación que todo jugador de F5 vivió; Se Juega solo al final y sin forzar. Leer antes las filas existentes para no repetir ideas y aplicar lo que Juan escribió en "Comentarios".
+Crear 1 fila en la base de Notion "Se Juega · Publicaciones (Instagram y TikTok)" (data source collection://65808159-d405-477d-8d3f-446a96d3a0b9) con: Publicación = título, Red = TikTok, Tipo = Humor, Publicar el = miércoles 20:00 de esa semana, Estado = "Para revisar", Semana = fecha del lunes, Texto = guion con esta estructura:
+1. **Tres ganchos distintos** para elegir (no tres versiones del mismo), cada uno con la frase hablada y el texto en pantalla por separado. Formas que funcionan: "Nadie te dice que…", "Cuando el rival dice 'somos tranquis'…", "Dejá de… / Hacé… en cambio", el número concreto ("3 excusas que…"), la escena a mitad de frase. Si hay `swipe.md`, preferir las formas que figuran ahí.
+2. **Guion por momentos**: 0-2 s gancho (con movimiento en el primer cuadro, no una cara quieta); 2-7 s por qué le importa al que mira; después una idea por momento, cambiando de plano cada 3-4 s; últimos 3 s el remate y una sola acción; última frase que repita una palabra del gancho para que el loop cierre. Duración 15 a 30 s. Sin saludo ni "en este video".
+3. **Textos en pantalla aparte**, con tiempos: 6 palabras como máximo por cartel, el del gancho desde el primer cuadro, dentro de la zona segura (nada en los 230 px de arriba, los 480 px de abajo ni los 230 px de la derecha).
+4. Qué filmar con el celular en la cancha (sin caras de gente que no aceptó), qué tipo de audio en tendencia usar (sin inventar nombres de canciones), y descripción con el gancho en los primeros 125 caracteres + hashtags.
+Situación que todo jugador de F5 vivió; una sola idea por video; Se Juega solo al final y sin forzar. Nunca inventar números ni historias como si fueran reales. Leer antes las filas existentes para no repetir ideas y aplicar lo que Juan escribió en "Comentarios".
+
+## Lo que está funcionando (`swipe.md`)
+
+Una vez por mes, la rutina "búsqueda mensual de ganchos" deja en `social-kit/swipe.md` las formas de gancho que más rindieron en cuentas parecidas (fútbol amateur y humor futbolero), medidas contra el promedio de cada cuenta. Si existe, leerlo antes de elegir temas y ganchos: pesa más que el banco de temas. Copiar la forma del gancho, nunca el contenido ni el video de otros.
 
 ## Banco de temas para carruseles
 
