@@ -37,7 +37,7 @@ De los 2 carruseles de la semana: uno es sobre una **función de la app** y el o
   4. **Resumen** (anteúltima): todo el carrusel en una lista corta, que se entienda sin contexto. Es la placa que la gente captura y le manda a un amigo.
   5. **Cierre** con una sola acción.
 - **Numerar las placas** en la `etiqueta` (ej. "2/7", o "TIPO 1 · 2/7"): si se ve cuánto falta, más gente llega al final.
-- Si existe `swipe.md`, usarlo para elegir la forma del gancho de la portada (es lo que está funcionando en cuentas parecidas).
+- El gancho de la portada sale de `ganchos.md` (26 formas en castellano, con cuál conviene para cada tipo de carrusel). Si existe `swipe.md`, priorizar las formas que figuran ahí (es lo que está funcionando este mes en cuentas parecidas).
 - La app NO es el tema. Aparece solo en el `cierre` (ej.: "¿A tu equipo le falta rival? Sumalo {{gratis}} a Se Juega", boton "sejuega.net").
 - Temas: rotar entre las líneas del banco. No repetir nada de `usados.md`.
 - Tono: español rioplatense, humor de vestuario, frases cortas que den ganas de etiquetar a un amigo. Nada de marketing. Nada ofensivo, nada sobre árbitros, jugadores, clubes o equipos reales, ni política.
@@ -76,11 +76,15 @@ Antes de armar la semana, consultar los equipos de la app: POST https://wdnpzdhd
 ## Guion de video de humor (Notion)
 
 Crear 1 fila en la base de Notion "Se Juega · Publicaciones (Instagram y TikTok)" (data source collection://65808159-d405-477d-8d3f-446a96d3a0b9) con: Publicación = título, Red = TikTok, Tipo = Humor, Publicar el = miércoles 20:00 de esa semana, Estado = "Para revisar", Semana = fecha del lunes, Texto = guion con esta estructura:
-1. **Tres ganchos distintos** para elegir (no tres versiones del mismo), cada uno con la frase hablada y el texto en pantalla por separado. Formas que funcionan: "Nadie te dice que…", "Cuando el rival dice 'somos tranquis'…", "Dejá de… / Hacé… en cambio", el número concreto ("3 excusas que…"), la escena a mitad de frase. Si hay `swipe.md`, preferir las formas que figuran ahí.
+1. **Tres ganchos distintos** para elegir (no tres versiones del mismo), cada uno con la frase hablada y el texto en pantalla por separado. Formas que funcionan: "Nadie te dice que…", "Cuando el rival dice 'somos tranquis'…", "Dejá de… / Hacé… en cambio", el número concreto ("3 excusas que…"), la escena a mitad de frase. Usar las formas de `ganchos.md` (sección "Cómo elegir"); si hay `swipe.md`, preferir las que figuran ahí.
 2. **Guion por momentos**: 0-2 s gancho (con movimiento en el primer cuadro, no una cara quieta); 2-7 s por qué le importa al que mira; después una idea por momento, cambiando de plano cada 3-4 s; últimos 3 s el remate y una sola acción; última frase que repita una palabra del gancho para que el loop cierre. Duración 15 a 30 s. Sin saludo ni "en este video".
 3. **Textos en pantalla aparte**, con tiempos: 6 palabras como máximo por cartel, el del gancho desde el primer cuadro, dentro de la zona segura (nada en los 230 px de arriba, los 480 px de abajo ni los 230 px de la derecha).
 4. Qué filmar con el celular en la cancha (sin caras de gente que no aceptó), qué tipo de audio en tendencia usar (sin inventar nombres de canciones), y descripción con el gancho en los primeros 125 caracteres + hashtags.
 Situación que todo jugador de F5 vivió; una sola idea por video; Se Juega solo al final y sin forzar. Nunca inventar números ni historias como si fueran reales. Leer antes las filas existentes para no repetir ideas y aplicar lo que Juan escribió en "Comentarios".
+
+## Palabra clave en comentarios (ManyChat)
+
+Si en `usados.md` figura la línea "ManyChat activo: RIVAL", el cierre de los carruseles de feed puede pedir "Comentá RIVAL y te paso cómo conseguir partido" (en vez de "Link en la bio"), como máximo en uno de los dos carruseles de la semana. Si esa línea no está, no usar palabra clave: nadie respondería.
 
 ## Lo que aprendimos (`aprendizajes.md` y `respuestas.md`)
 
