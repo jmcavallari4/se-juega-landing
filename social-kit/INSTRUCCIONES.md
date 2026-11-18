@@ -84,7 +84,10 @@ Situación que todo jugador de F5 vivió; una sola idea por video; Se Juega solo
 
 ## Palabra clave en comentarios (ManyChat)
 
-Si en `usados.md` figura la línea "ManyChat activo: RIVAL", el cierre de los carruseles de feed puede pedir "Comentá RIVAL y te paso cómo conseguir partido" (en vez de "Link en la bio"), como máximo en uno de los dos carruseles de la semana. Si esa línea no está, no usar palabra clave: nadie respondería.
+ManyChat está activo (plan gratis) con la palabra **RIVAL**: quien la comenta recibe por mensaje el link para registrar el equipo (utm_medium=manychat) y una respuesta pública en el comentario. El plan gratis solo permite engancharla a **una publicación por vez** y 25 personas por mes.
+- Usarla en **un solo carrusel de feed por semana** (el de los martes): el pie termina con "Comentá RIVAL y te paso cómo conseguir partido 👇" en lugar de "Link en la bio". En el cierre de la placa también puede decir "Comentá RIVAL".
+- La rutina de Instagram del martes a las 20:14 cambia la automatización de ManyChat para que apunte a ese carrusel nuevo.
+- En TikTok no: ManyChat no está conectado a TikTok.
 
 ## Lo que aprendimos (`aprendizajes.md` y `respuestas.md`)
 

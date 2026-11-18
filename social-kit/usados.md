@@ -1,3 +1,5 @@
+ManyChat activo: RIVAL (desde 2026-11-18; apunta a una sola publicación, la cambia la rutina de Instagram los martes)
+
 # Piezas ya programadas
 
 | Fecha de publicación | Tipo | Tema / título |
