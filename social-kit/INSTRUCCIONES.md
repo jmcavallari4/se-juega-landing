@@ -113,6 +113,7 @@ Copiar las imágenes a `public/social/AAAA-MM-DD-nombre/` (fecha de publicación
 
 Marca `sejuega_app`, blogId `7987828`, zona horaria `America/Buenos_Aires`.
 - Carrusel TikTok: `providers: [{"network":"tiktok"}]`, `media` = lista de URLs en orden, `text` = descripción, `tiktokData: {"title": "...", "autoAddMusic": true, "privacyOption": "PUBLIC_TO_EVERYONE", "commercialContentOwnBrand": true, "photoCoverIndex": 0}`, `autoPublish: true`.
+- **TikTok no acepta PNG** en carruseles de fotos (los de las semanas del 17 y 20/11 fallaron por eso): convertir las placas del carrusel de TikTok a JPG antes de copiarlas (ej. PIL `convert('RGB').save(..., quality=92)`) y usar las URLs .jpg. Instagram y Facebook siguen en PNG.
 - Historia: `providers: [{"network":"instagram"},{"network":"facebook"}]`, `media` = [URL], sin `text`, `instagramData: {"type":"STORY"}`, `facebookData: {"type":"STORY"}`, `autoPublish: true`.
 
 ## Registro
