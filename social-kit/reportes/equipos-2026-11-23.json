@@ -1,0 +1,281 @@
+[
+ {
+  "name": "Los amigos del men",
+  "area_type": "CABA",
+  "barrio_caba": "Caballito",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1216,
+  "matches_played": 1
+ },
+ {
+  "name": "América Resiste (CNEA FC)",
+  "area_type": "CABA",
+  "barrio_caba": "Villa Urquiza",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Atlético Medea club Buenos Aires",
+  "area_type": "PBA",
+  "barrio_caba": null,
+  "pba_zona": "Sur",
+  "pba_localidad": "Lomas de Zamora",
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Atlético Vineiro",
+  "area_type": "CABA",
+  "barrio_caba": "Villa Urquiza",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Combinada fc",
+  "area_type": "CABA",
+  "barrio_caba": "Saavedra",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Correntinos F.C",
+  "area_type": "CABA",
+  "barrio_caba": "Palermo",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Fabo FC",
+  "area_type": "CABA",
+  "barrio_caba": "Liniers",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Falta Uno F.C",
+  "area_type": "CABA",
+  "barrio_caba": "Nueva Pompeya",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Fulbito Colegiales FC",
+  "area_type": "CABA",
+  "barrio_caba": "Colegiales",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "FÚTBOL DESDE ADENTRO",
+  "area_type": "CABA",
+  "barrio_caba": "Liniers",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Il capo rejunte",
+  "area_type": "PBA",
+  "barrio_caba": null,
+  "pba_zona": "Sur",
+  "pba_localidad": "Temperley, Lomas de Zamora",
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Inferno FC",
+  "area_type": "CABA",
+  "barrio_caba": "San Nicolás",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "LA NUEVA de Guernica",
+  "area_type": "PBA",
+  "barrio_caba": null,
+  "pba_zona": "Sur",
+  "pba_localidad": "Guernica, Presidente Perón",
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "La Pepe",
+  "area_type": "PBA",
+  "barrio_caba": null,
+  "pba_zona": "Sur",
+  "pba_localidad": "Caba",
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "La Ranchada 2.0",
+  "area_type": "PBA",
+  "barrio_caba": null,
+  "pba_zona": "Sur",
+  "pba_localidad": "San Francisco Solano, Quilmes",
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "LAF",
+  "area_type": "CABA",
+  "barrio_caba": "Colegiales",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Leon Cancino FC",
+  "area_type": "CABA",
+  "barrio_caba": "Colegiales",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Los copos FC",
+  "area_type": "PBA",
+  "barrio_caba": null,
+  "pba_zona": "Sur",
+  "pba_localidad": "Bernal, Quilmes",
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "LP12",
+  "area_type": "CABA",
+  "barrio_caba": "Villa del Parque",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Manzanares Team",
+  "area_type": "PBA",
+  "barrio_caba": null,
+  "pba_zona": "Oeste",
+  "pba_localidad": "Villa Luzuriaga, La Matanza",
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "MUCHACHOS FC",
+  "area_type": "CABA",
+  "barrio_caba": "Boedo",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Nacional",
+  "area_type": "CABA",
+  "barrio_caba": "Palermo",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Nolodejan Fc",
+  "area_type": "PBA",
+  "barrio_caba": null,
+  "pba_zona": "Oeste",
+  "pba_localidad": "Villa Madero, La Matanza",
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Norzayz",
+  "area_type": "PBA",
+  "barrio_caba": null,
+  "pba_zona": "Norte",
+  "pba_localidad": "Don Torcuato, Tigre",
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Old boys",
+  "area_type": "CABA",
+  "barrio_caba": "Caballito",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Pisala fc",
+  "area_type": "PBA",
+  "barrio_caba": null,
+  "pba_zona": "Oeste",
+  "pba_localidad": "Castelar, Morón",
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Prime fc",
+  "area_type": "CABA",
+  "barrio_caba": "Villa Soldati",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Team Gonza",
+  "area_type": "CABA",
+  "barrio_caba": "Barracas",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Villa Celina City",
+  "area_type": "PBA",
+  "barrio_caba": null,
+  "pba_zona": "Oeste",
+  "pba_localidad": "Villa Celina, La Matanza",
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Zalo Barber FC",
+  "area_type": "CABA",
+  "barrio_caba": "Almagro",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1200,
+  "matches_played": 0
+ },
+ {
+  "name": "Supernova",
+  "area_type": "CABA",
+  "barrio_caba": "Colegiales",
+  "pba_zona": null,
+  "pba_localidad": null,
+  "rating": 1184,
+  "matches_played": 1
+ }
+]
